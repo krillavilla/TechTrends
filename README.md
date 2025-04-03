@@ -77,29 +77,21 @@ Here’s a summary of what I accomplished:
 ## 🗂️ Project Structure
 
 ```
-.
+techtrends/
 ├── README.md               # This file
-├── argocd/                 # ArgoCD application manifests
+├── TESTING.md              # Testing guide for the application
+├── app.py                  # Main application and logging logic
+├── init_db.py              # DB initialization script
+├── requirements.txt        # Python dependencies
+├── schema.sql              # DB schema definition
+├── templates/              # HTML templates (index, about, create, 404, post)
+├── static/css/             # Stylesheet
+├── __init__.py             # Marks the directory as a Python package
 ├── docker_commands         # All Docker CLI usage and output
-├── helm/                   # Helm chart and values files
 ├── kubernetes/             # YAML manifests for k8s deployment
+├── helm/                   # Helm chart and values files
+├── argocd/                 # ArgoCD application manifests
 ├── screenshots/            # Visual proof of completed tasks
-├── techtrends/             # Main application directory
-│   ├── __init__.py         # Marks the directory as a Python package
-│   ├── app.py              # Main application and logging logic
-│   ├── init_db.py          # DB initialization script
-│   ├── requirements.txt    # Python dependencies
-│   ├── schema.sql          # DB schema definition
-│   ├── static/             # Static files directory
-│   │   └── css/            # CSS files directory
-│   │       └── main.css    # Main stylesheet
-│   └── templates/          # HTML templates directory
-│       ├── 404.html        # 404 error page
-│       ├── about.html      # About page
-│       ├── base.html       # Base template
-│       ├── create.html     # Create post page
-│       ├── index.html      # Home page
-│       └── post.html       # Individual post page
 └── Vagrantfile             # Vagrant box configuration for k3s cluster
 ```
 
@@ -107,22 +99,31 @@ Here’s a summary of what I accomplished:
 
 To get started:
 
-1. **Change directory to the techtrends folder:**
-   ```bash
-   cd techtrends
-   ```
-
-2. **Initialize the database:**
+1. **Initialize the database:**
    ```bash
    python init_db.py
    ```
 
-3. **Run the application:**
+2. **Run the application:**
    ```bash
    python app.py
    ```
 
-4. **Visit the app** at [http://127.0.0.1:3111](http://127.0.0.1:3111)
+3. **Visit the app** at [http://127.0.0.1:3111](http://127.0.0.1:3111)
+
+## 🧪 Testing the Application
+
+For comprehensive testing instructions, please refer to the [TESTING.md](TESTING.md) guide. This guide includes:
+
+- Instructions for testing the application locally
+- Docker container testing procedures
+- Kubernetes deployment testing steps
+- Helm chart testing guidelines
+- ArgoCD deployment testing instructions
+- Troubleshooting tips for common issues
+- Required screenshots for project rubric
+
+Following this guide will ensure that all components of the TechTrends application are functioning correctly before submission.
 
 ---
 
