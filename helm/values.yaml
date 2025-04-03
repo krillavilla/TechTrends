@@ -1,6 +1,6 @@
 # Default values for the TechTrends Helm chart
 
-namespace: techtrends-test
+namespace: sandbox
 
 service:
   port: 4111
