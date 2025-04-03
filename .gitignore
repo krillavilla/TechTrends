@@ -1,8 +1,49 @@
+# Python virtual environments
 .env/
 .venv/
-.vagrant/
 .myvenv/
+venv/
+env/
+
+# Python cache files
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Vagrant files
 .vagrant/
+
+# IDE files
 .idea/
+.vscode/
+*.swp
+*.swo
+
+# Local development files
 TESTING.md
+docker_commands
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+techtrends/database.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables and secrets
+.env
+*.env
+.flaskenv
+*.pem
+*.key
+*secret*
+*credential*
+
+# Temporary files
+*.bak
+*.backup
+*.tmp
+*.temp
