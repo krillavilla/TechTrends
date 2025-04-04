@@ -102,7 +102,7 @@ def metrics():
     posts = connection.execute('SELECT COUNT(*) FROM posts').fetchone()
     connection.close()
     post_count = posts[0]
-    
+
     response = app.response_class(
         response=json.dumps({
             "post_count": post_count,
@@ -113,6 +113,6 @@ def metrics():
     )
     return response
 
-# start the application on port 3111
+# start the application on port 7111
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port='3111')
+   app.run(host='0.0.0.0', port='7111')

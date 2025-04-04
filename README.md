@@ -30,7 +30,7 @@ This project gave me hands-on experience with modern DevOps and cloud-native app
 
 ## 🏆 My Achievements
 
-Here’s a summary of what I accomplished:
+Here's a summary of what I accomplished:
 
 ### ✅ Development Best Practices
 
@@ -46,7 +46,7 @@ Here’s a summary of what I accomplished:
 - Created a `Dockerfile` using **Python 2.7** as base.
 - Installed dependencies from `requirements.txt`.
 - Initialized the SQLite database with default posts via `init_db.py`.
-- Exposed the app on **port 3111** and ran it on container start.
+- Exposed the app on **port 7111** and ran it on container start.
 - Built and ran the image locally using Docker.
 
 ### ⚙️ Continuous Integration
@@ -109,7 +109,7 @@ To get started:
    python app.py
    ```
 
-3. **Visit the app** at [http://127.0.0.1:3111](http://127.0.0.1:3111)
+3. **Visit the app** at [http://127.0.0.1:7111](http://127.0.0.1:7111)
 
 ## 🧪 Testing the Application
 
@@ -125,6 +125,15 @@ For comprehensive testing instructions, please refer to the [TESTING.md](TESTING
 
 Following this guide will ensure that all components of the TechTrends application are functioning correctly before submission.
 
+## 📸 Reviewer Requirements
+
+For specific instructions on how to meet the reviewer's requirements, please refer to the [INSTRUCTIONS.md](INSTRUCTIONS.md) guide. This guide includes:
+
+- Instructions for verifying the application running on port 7111
+- Steps to verify the Kubernetes deployment is in the RUNNING state
+- Steps to verify the ArgoCD techtrends-prod application is in a healthy state
+- Instructions for updating the required screenshots
+
 ---
 
-I’m proud of what I achieved with TechTrends — not only in getting a cloud-native app into production but also in applying real-world DevOps principles every step of the way.
+I'm proud of what I achieved with TechTrends — not only in getting a cloud-native app into production but also in applying real-world DevOps principles every step of the way.

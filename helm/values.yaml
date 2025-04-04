@@ -3,8 +3,8 @@
 namespace: sandbox
 
 service:
-  port: 4111
-  targetPort: 3111
+  port: 7111
+  targetPort: 7111
   protocol: TCP
   type: ClusterIP
 
@@ -23,12 +23,12 @@ resources:
     cpu: 500m
     memory: 128Mi
 
-containerPort: 3111
+containerPort: 7111
 
 livenessProbe:
   path: /healthz
-  port: 3111
+  port: 7111
 
 readinessProbe:
   path: /healthz
-  port: 3111
+  port: 7111
